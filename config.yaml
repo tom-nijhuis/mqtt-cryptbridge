@@ -19,5 +19,6 @@ mqtt:
     password: {$GLOBAL_MQTT_PASSWORD} #
     client_id: {random_int}
     topic: {random_int}
+    retain: False
 
 
