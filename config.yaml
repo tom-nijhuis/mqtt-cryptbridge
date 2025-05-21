@@ -1,24 +1,24 @@
 keys:
-  private_key_file: ./private_key.pem
-  public_key_file: ./public_key.pem
+  private_key_file: './private_key.pem'
+  public_key_file: './public_key.pem'
 
 mqtt:
   local:
-    address: 192.168.0.5
+    address: '192.168.0.5'
     port: 1883
-    user: {$LOCAL_MQTT_USERNAME}
-    password: {$LOCAL_MQTT_PASSWORD}
-    client_id: mqtt_cryptbridge_{random_int}
-    topic_outbound: 'cryptbridge/#'
-    topic_inbound: '#'
+    user: '{$LOCAL_MQTT_USERNAME}'
+    password: '{$LOCAL_MQTT_PASSWORD}'
+    client_id: 'mqtt_cryptbridge_{random_int}'
+    topic_outbound: 'cryptbridge/out/#'
+    topic_inbound: 'cryptbridge/in/#'
 
   global:
-    address: test.mosquitto.org
+    address: 'test.mosquitto.org'
     port: 1883
-    user: {$GLOBAL_MQTT_USERNAME} # Optional, only used in case of auth failure at first attempt
-    password: {$GLOBAL_MQTT_PASSWORD} #
-    client_id: {random_int}
-    topic: {random_int}
+    user: '{$GLOBAL_MQTT_USERNAME}' # Optional, only used in case of auth failure at first attempt
+    password: '{$GLOBAL_MQTT_PASSWORD}'
+    client_id: '{random_int}'
+    topic: '{random_int}'
     retain: False
 
 
