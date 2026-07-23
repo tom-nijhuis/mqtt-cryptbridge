@@ -1,4 +1,4 @@
-> Note: Apologies, due to protected client work, I'm not able to finish this repo under the MIT license.
+> Note: Apologies, due to protected client work, I'm not able to publish this repo under the MIT license.
 
 
 # mqtt-cryptbridge
